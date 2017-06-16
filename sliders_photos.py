@@ -32,7 +32,7 @@ def update_pic(n):
 
 #This creates the main window of an application
 window = tk.Tk()
-window.title("Application de fou")
+window.title("Application utile")
 #window.geometry("1024x768") # Tu peux décider des dimensions de la fenêtre si tu veux les fixer
 #window.configure(background='black') # Tu peux changer la couleur du background avec ça
 
@@ -48,7 +48,8 @@ pic_panel = tk.Label(window, width=800, height=600, image = pic)
 # Faire un panneau pour écrire le titre de la figure
 pic_label = tk.Label(window, text=photos[0])
 # Faire le slider
-slider = tk.Scale(window, from_=0, to=len(photos)-1, orient=tk.HORIZONTAL, command=update_pic) # command passe la valeur du slider à la fonctin update_pic par défault
+slider = tk.Scale(window, from_=0, to=len(photos)-1, length=500, 
+                  orient=tk.HORIZONTAL, command=update_pic) # command passe la valeur du slider à la fonctin update_pic par défault
 
 # The grid geometry manager places widgets in rows or columns.
 # Placer les panneau à bonne place
