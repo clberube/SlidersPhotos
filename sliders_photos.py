@@ -28,8 +28,8 @@ def update_pic(n):
     pic_panel.configure(image=pic) # Met à jour la figure
     pic_panel.image = pic # Met à jour la figure
     pic_label.configure(text=path) # Met à jour le titre de la figure
-    print path
-    
+    print path 
+
 #This creates the main window of an application
 window = tk.Tk()
 window.title("Application de fou")
