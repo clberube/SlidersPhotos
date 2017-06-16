@@ -10,7 +10,7 @@ from PIL import ImageTk, Image
 
 # Faire une liste des photos à importer
 photos = ["./Images/xfiles.jpg",
-          "./Images/twinpeaks.png",
+          "./Images/Coop_twinpeaks.png",
           "./Images/2001.jpg",
           "./Images/perruche.jpg",
           "./Images/RAFspitfire.jpg",
