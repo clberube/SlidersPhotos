@@ -37,7 +37,7 @@ window.title("Application de fou")
 #window.configure(background='black') # Tu peux changer la couleur du background avec ça
 
 # Creates a Tkinter-compatible photo image, which can be used everywhere Tkinter expects an image object.
-image = Image.open(photos[0])
+image = Image.open(photos[0]) # Utiliser la première photo dans la liste pour initialiser la fenêtre
 maxsize = (800, 600) # Sert à réduire la taille de la figure pour qu'elle rentre dans le panneau
 image.thumbnail(maxsize, Image.ANTIALIAS) # Réduit la taille de la figure
 pic = ImageTk.PhotoImage(image) # Converti la figure en objet pour tkinter
